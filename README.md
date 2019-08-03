@@ -1,0 +1,2 @@
+# selectores
+Selectores jquery kinal
