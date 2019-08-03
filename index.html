@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/estilo.css">
+<head>
+    <title>
+        Selectores
+    </title>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <td><input type="text" class="selector"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p border="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perspiciatis, rem cumque
+                        repudiandae harum et ducimus veniam ipsam eius illo, voluptas autem accusamus possimus officiis
+                        deleniti sequi, ullam nam libero.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perspiciatis, rem cumque
+                        repudiandae harum et ducimus veniam ipsam eius illo, voluptas autem accusamus possimus officiis
+                        deleniti sequi, ullam nam libero.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perspiciatis, rem cumque
+                        repudiandae harum et ducimus veniam ipsam eius illo, voluptas autem accusamus possimus officiis
+                        deleniti sequi, ullam nam libero.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" class="Ejemplo" value="Boton"></td>
+                <td colspan="2"><input type="button" class="Ejemplo" value="Boton" class="selector"></td>
+            </tr> 
+            <tr> 
+                <td colspan="2"><input type="button" class="Ejemplo" value="Boton"></td>
+                <td colspan="2"><input type="button" class="Ejemplo" value="Boton"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Ejemplo</th>
+                    <th>Descripcion</th>
+                    <th>Aplicar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>*</td>
+                    <td>$("p")</td>
+                    <td>Selecciona todos los elemntos de la pagina</td>
+                    <td><input type="button" id="todos" value="Seleccionar"</td>
+                </tr>
+                <tr>
+                        <td>*</td>
+                        <td>$("*")</td>
+                        <td>Selecciona un elemento en el documento html</td>
+                        <td><input type="button" id="elemento" value="Seleccionar"</td>
+                </tr>
+                <tr>
+                        <td>Por id</td>
+                        <td>$("#email")</td>
+                        <td>Selecciona un elemento en el documento html buscandolo por id</td>
+                        <td><input type="button" id="idelemento" value="Seleccionar"</td>
+                </tr>
+                <tr>
+                        <td>Por clase</td>
+                        <td>$(".ejemplo")</td>
+                        <td>Selecciona un elemento en el documento html buscandolo por clase</td>
+                        <td><input type="button" id="claseElemento" value="Seleccionar"</td>
+                </tr>
+                <tr>
+                        <td>Por tipo</td>
+                        <td>$("input")</td>
+                        <td>Selecciona un elemento en el documento html buscandolo por tipo</td>
+                        <td><input type="button" id="tipoelemento" value="Seleccionar"</td>
+                </tr>
+                <tr>
+                        <td>Ajax</td>
+                        <td>$.ajax("objeto")</td>
+                        <td>Genera una peticion a un web service o un API Rest</td>
+                        <td><input type="button" id="ajax" value="Seleccionar"</td>
+                </tr>
+            </tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+
+</html>
